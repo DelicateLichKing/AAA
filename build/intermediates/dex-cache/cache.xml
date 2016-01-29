@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Administrator\workspace\AAA\libs\HCNetSDK (2).jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f49401c50e227ab58ea75216430321d71b4cd1a6">
+        <dex dex="C:\Users\Administrator\workspace\AAA\build\intermediates\pre-dexed\debug\HCNetSDK (2)-a97f636662cdb9fb3b7a1cd5c0fbf213eb681698.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\workspace\AAA\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="91a1b1aabf740a6f64c2f73f5b0dc6611779ac8b">
+        <dex dex="C:\Users\Administrator\workspace\AAA\build\intermediates\pre-dexed\debug\android-support-v4-6a4c8abea6d2d2c229663aeca767a54bf64ae1a7.jar" />
+    </item>
+
+</items>
