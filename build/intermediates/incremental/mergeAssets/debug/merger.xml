@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Administrator\workspace\AAA\assets"><file name="fonts/SIMLI.TTF" path="C:\Users\Administrator\workspace\AAA\assets\fonts\SIMLI.TTF"/><file name="fonts/ziti2.ttf" path="C:\Users\Administrator\workspace\AAA\assets\fonts\ziti2.ttf"/></source></dataSet><dataSet config="debug"><source path="C:\Users\Administrator\workspace\AAA\build-types\debug\assets"/></dataSet></merger>
