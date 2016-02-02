@@ -53,7 +53,14 @@ public class Welcome extends Activity implements OnClickListener,CompoundButton.
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.welcome);
+		if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0)
+		{
+			finish();
+			return;
+		}
+		//	setContentView(R.layout.main);
+
+	setContentView(R.layout.welcome);
 		
 		initViews();
 		seekThread.start();

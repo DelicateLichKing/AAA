@@ -153,7 +153,7 @@ public class Main extends Activity implements SurfaceHolder.Callback {
 	private int 			m_iPlayID				= -1;				// return by NET_DVR_RealPlay_V30
 	private boolean			m_bNeedDecode			= true;
 	private boolean			m_bMultiPlay			= false;
-	
+	private long exitTime = 0;
     /**
      * Called when the activity is first created.
      */
@@ -2107,12 +2107,23 @@ public class Main extends Activity implements SurfaceHolder.Callback {
 			}
 		}
 	}
-	public boolean onKeyDown(int keyCode, KeyEvent event) {    	
-    	if(keyCode == KeyEvent.KEYCODE_BACK){    		   		
-			return false;					
+
+	//两次返回键退出程序
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if(keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN){
+			if((System.currentTimeMillis()-exitTime) > 2000){
+				Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
+				exitTime = System.currentTimeMillis();
+			} else {
+				finish();
+				System.exit(0);
+			}
+			return true;
 		}
-		return false;
+		return super.onKeyDown(keyCode, event);
 	}
+
 	// 大鹏控制，待修改
 	private void dpControl(int i) {
 			controlDialog.setVisibility(View.GONE);
